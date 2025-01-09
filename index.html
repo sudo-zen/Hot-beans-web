@@ -1,24 +1,147 @@
 <!DOCTYpE html>
 <html>
 <head>
-
-<meta name="twitter:title" content="Title">
-<meta name="twitter:description" content="Cool description">
-<meta name="twitter:image" content="23161FF5-4CE0-42B8-A056-A56B867B2E7E.jpeg">
-<meta name="twitter:card" content="summary_large_image">
-
-<meta property="og:image"  content=""/>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: orange;
+}
+.header h1 {
+  font-size: 50px;
+  Color:red
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #100;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-
-<img src="23161FF5-4CE0-42B8-A056-A56B867B2E7E.jpeg" alt="Italian Trulli">
-<!-- Start of LiveChat (www.livechat.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 15206766;
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
-<noscript><a href="https://www.livechat.com/chat-with/15206766/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
-<!-- End of LiveChat code -->
+<div class="header">
+  <h1>Hot beans web</h1>
+  <p></p>
+</div>
+<div class="topnav">
+  <a href="#">Home </a>
+  <a href="#">Our team</a>
+  <a href="#">Requirements</a>
+  <a href="#">Apply now</a>
+  <a href="#">Recommended courses </a>
+  <a href="#" style="float:right ">Link</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2></h2>
+      <h5>Title description,	 Dec 7, 2019</h5>
+<img src="executive-at-monitor-e1487535643380.jpg" width="275" height="183" alt=""/>
+<p></p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>What we offer</h2>
+      
+	  <h2>Hot beans web is a full service digital agency located in Salisbury, Southampton & Bristol.
+We are a team of professional designers, developers, marketers and IT specialists combining our knowledge and expertise to create exceptional designs and strategies, tailored to your business’s needs and requirements.
+Tell us about your goal and we’ll show you how you can achieve it. Whatever your project, we’d love to be involved. </h2>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Contact us</h2>
+      
+        <p> Mobile: 012467680</p>
+        <p> address: LL29 8HF</p>
+    </div>
+    <div class="card">
+      <h3>Popular post</h3>
+      <div class="img"><p>Image</p></div>
+      <div class="img"><p>Image</p></div>
+      <div class="img"></div>
+    </div>
+    <div class="card">
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2></h2>
+</div>
 </body>
 </html>
